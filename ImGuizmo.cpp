@@ -1306,13 +1306,13 @@ namespace ImGuizmo
 
             if (gContext.mbUsing && (gContext.mActualID == -1 || gContext.mActualID == gContext.mEditingID))
             {
-               drawList->AddLine(baseSSpace, worldDirSSpaceNoScale, 0xFF404040, lineThinkess);
+               drawList->AddLine(baseSSpace, worldDirSSpaceNoScale, 0xFF404040, lineThickness);
                drawList->AddCircleFilled(worldDirSSpaceNoScale, circleSize, 0xFF404040);
             }
 
             if(!hasTranslateOnAxis || gContext.mbUsing)
             {
-              drawList->AddLine(baseSSpace, worldDirSSpace, colors[i + 1], lineThinkess);
+              drawList->AddLine(baseSSpace, worldDirSSpace, colors[i + 1], lineThickness);
             }
             drawList->AddCircleFilled(worldDirSSpace, circleSize, colors[i + 1]);
 
